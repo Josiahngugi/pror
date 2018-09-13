@@ -2,26 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-test',
-  template: `
-      <h2> i am a {{title}}</h2>
-      <h2 *ngIf="initial; else foo">this ngif</h2>
-      <ng-template #foo>
-      <h2>this is hidden!</h2>
-      </ng-template>
-      `,
-  styles: [
-    `
-    .text-success{
-      color:green;
-    }
-    .text-danger{
-      color:red;
-    }
-    .text-special{
-      font-style:italic;
-    }
-    `
-    ]
+  templateUrl:'./test.component.html',
+  styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
 public name="maina"
